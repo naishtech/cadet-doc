@@ -3,10 +3,7 @@
 
 @import "{{ site.theme }}";
 
-/* Hide GitHub/Download header buttons for a cleaner landing page. */
-header a.button,
-header a[href*="github.com"],
-header a[href$=".zip"],
-header a[href$=".tar.gz"] {
+/* Hide the Midnight theme top header bar (contains View on GitHub/download links). */
+#header {
   display: none !important;
 }
