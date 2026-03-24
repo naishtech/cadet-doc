@@ -49,14 +49,8 @@ Legend: ✅ included, ☐ not included
 
 ## Documentation
 
-This site will host:
-
-- Getting Started guide
-- Full CADET manual
-- Build profile setup examples
-- Troubleshooting and FAQ
-
-Detailed docs are being added next.
+- **[Getting Started Guide](UserManual/GETTING_STARTED.md)** — Walk through your first build and Steam publishing workflow in 6 steps.
+- **[Full CADET Manual](UserManual/README.md)** — Complete reference covering all features, settings, publishing workflows, and troubleshooting.
 
 ## Contact
 
