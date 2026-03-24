@@ -1,3 +1,4 @@
-theme: jekyll-theme-dinky
+theme: jekyll-theme-midnight
 title: CADET
 description: Unity build and release automation for game developers
+show_downloads: false
