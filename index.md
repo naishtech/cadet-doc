@@ -21,6 +21,8 @@ CADET is designed for solo developers, indie teams, and studios that want a clea
 - CADET Pro: everything in Lite plus Steam, Epic Games Store, and macOS notarization workflows
 - CADET Enterprise: everything in Pro plus enterprise licensing options for cloud CI/CD and advanced team rollout needs
 
+Purchase CADET Pro: [CADET Desktop License](https://www.covyne.com/store/p/-cadet-desktop-license)
+
 ## Feature Comparison
 
 Legend: ✅ included, ☐ not included
