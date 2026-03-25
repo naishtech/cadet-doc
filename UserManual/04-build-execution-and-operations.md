@@ -4,6 +4,8 @@
 
 CADET executes selected operations in sequence from the same profile.
 
+Execution is deterministic: selected steps run in a fixed order, and each step must pass before the next begins. This helps keep release behavior predictable and easier to audit.
+
 Common sequence:
 1. Unity Build
 2. Notarization (macOS)
@@ -23,6 +25,12 @@ Common sequence:
 3. Click Execute.
 4. Monitor progress in CADET console and progress bar.
 
+Pre run check:
+
+- Confirm profile validation is green.
+- Confirm output directory has enough free disk space.
+- Confirm required Pro dependencies and credentials are ready if publishing is selected.
+
 ## Practical Examples
 
 ### Example A: Build only
@@ -41,6 +49,20 @@ Common sequence:
 - Leave Unity Build unchecked.
 - Check publish action(s).
 - Click Execute.
+
+Use this when you already created a verified artifact and only want to publish it.
+
+## Failure Handling
+
+- If a step fails, CADET stops the sequence and marks the job as failed.
+- Review the active operation log first, then Unity log or tool specific output.
+- Fix the root issue in profile settings or environment, then rerun the same operation set.
+
+## Performance Tips
+
+- Use separate output folders per target to avoid accidental artifact overwrite.
+- Keep build workspace on a fast local SSD when possible.
+- Queue independent jobs instead of editing profile fields repeatedly during a release cycle.
 
 ## Build Safety Notes
 

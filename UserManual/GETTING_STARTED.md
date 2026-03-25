@@ -5,6 +5,11 @@ This guide walks through a simple first workflow:
 2. Run the build.
 3. Deploy the build to Steam.
 
+Estimated time:
+
+- Lite path, build only: 10 to 20 minutes.
+- Pro path, build and Steam publish: 20 to 40 minutes, depending on tool setup and upload size.
+
 Feature markers used in this guide:
 - `[LITE+PRO]` Available in both CADET Lite and CADET Pro.
 - `[PRO]` Available only in CADET Pro.
@@ -22,10 +27,20 @@ Feature markers used in this guide:
 3. You have a dedicated build workspace copy of your Unity project.
 4. For Steam publishing, you have a Steamworks app and credentials.
 
+Recommended checks:
+
+- Confirm your Unity project compiles without editor errors.
+- Confirm output folder location has enough free disk space.
+- Confirm CADET profile paths point to existing directories.
+
 ## Step 1: Open CADET in Unity `[LITE+PRO]`
 
 1. Open Unity.
 2. Go to `Tools > Covyne > C.A.D.E.T`.
+
+Expected result:
+
+- CADET window opens and shows profile controls.
 
 ## Step 2: Configure Publishing Tools `[PRO]`
 
@@ -40,6 +55,10 @@ If you are using CADET Pro and want to publish to Steam:
 
 Note:
 - In CADET Lite, Publishing Tools and Steam publishing are not available.
+
+Expected result:
+
+- Steam publish operation becomes available once dependencies and credentials are valid.
 
 ## Step 3: Create a Build Profile `[LITE+PRO]`
 
@@ -76,6 +95,10 @@ If Steam is not fully configured, CADET will block publish actions until require
 Expected result:
 - Windows build files are generated in your configured build output path.
 
+Verification tip:
+
+- Open the output folder immediately and confirm executable plus data files are present.
+
 ## Step 6: Deploy the Build to Steam `[PRO]`
 
 1. Keep the same profile selected.
@@ -88,6 +111,10 @@ Expected result:
 
 Expected result:
 - Build is uploaded to Steam according to your configured branch/depot settings.
+
+Verification tip:
+
+- Confirm upload record in CADET logs, then verify artifact visibility in Steamworks.
 
 ## Using Build Queue `[LITE+PRO]`
 
@@ -124,4 +151,15 @@ For the fastest successful first run:
 3. Run `Unity Build`.
 4. (Pro only) Configure Steam tools + credentials.
 5. (Pro only) Run `Publish to Steam`.
+
+## What To Do Next
+
+After your first successful run:
+
+1. Create separate profiles for release and QA.
+2. Add queue jobs for repeatable release bundles.
+3. Read the full manual sections for your pipeline:
+- [Build Queue](05-build-queue.md)
+- [Sync Modes](06-sync-modes-directory-and-git-sync.md)
+- [Troubleshooting](13-troubleshooting.md)
 
