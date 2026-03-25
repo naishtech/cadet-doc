@@ -11,8 +11,8 @@ Estimated time:
 - Pro path, build and Steam publish: 20 to 40 minutes, depending on tool setup and upload size.
 
 Feature markers used in this guide:
-- `[LITE+PRO]` Available in both CADET Lite and CADET Pro.
-- `[PRO]` Available only in CADET Pro.
+- <span style="color: #D4AF37;">[Pro]</span> Available only in CADET Pro.
+- Unmarked sections apply to both CADET Lite and CADET Pro.
 
 ## Quick Product Difference
 
@@ -33,7 +33,7 @@ Recommended checks:
 - Confirm output folder location has enough free disk space.
 - Confirm CADET profile paths point to existing directories.
 
-## Step 1: Open CADET in Unity `[LITE+PRO]`
+## Step 1: Open CADET in Unity
 
 1. Open Unity.
 2. Go to `Tools > Covyne > C.A.D.E.T`.
@@ -42,7 +42,7 @@ Expected result:
 
 - CADET window opens and shows profile controls.
 
-## Step 2: Configure Publishing Tools `[PRO]`
+## Step 2: Configure Publishing Tools <span style="color: #D4AF37;">[Pro]</span>
 
 If you are using CADET Pro and want to publish to Steam:
 
@@ -60,7 +60,7 @@ Expected result:
 
 - Steam publish operation becomes available once dependencies and credentials are valid.
 
-## Step 3: Create a Build Profile `[LITE+PRO]`
+## Step 3: Create a Build Profile
 
 1. In CADET, create a new profile.
 2. Set Unity build fields:
@@ -72,10 +72,10 @@ Expected result:
 3. Set OS/target to Windows.
 
 Optional sync mode:
-- Directory Sync mode `[LITE+PRO]`
-- Git Sync mode `[PRO]`
+- Directory Sync mode
+- Git Sync mode <span style="color: #D4AF37;">[Pro]</span>
 
-## Step 4: Add Steam Settings to the Profile `[PRO]`
+## Step 4: Add Steam Settings to the Profile <span style="color: #D4AF37;">[Pro]</span>
 
 In the same profile, configure Steam fields:
 
@@ -85,7 +85,7 @@ In the same profile, configure Steam fields:
 
 If Steam is not fully configured, CADET will block publish actions until required fields are set.
 
-## Step 5: Run a Simple Windows Build `[LITE+PRO]`
+## Step 5: Run a Simple Windows Build
 
 1. Select your profile.
 2. Check `Unity Build`.
@@ -99,7 +99,7 @@ Verification tip:
 
 - Open the output folder immediately and confirm executable plus data files are present.
 
-## Step 6: Deploy the Build to Steam `[PRO]`
+## Step 6: Deploy the Build to Steam <span style="color: #D4AF37;">[Pro]</span>
 
 1. Keep the same profile selected.
 2. Check:
@@ -116,7 +116,7 @@ Verification tip:
 
 - Confirm upload record in CADET logs, then verify artifact visibility in Steamworks.
 
-## Using Build Queue `[LITE+PRO]`
+## Using Build Queue
 
 You can queue multiple jobs (for example, several profiles or repeated workflows).
 
