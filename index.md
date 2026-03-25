@@ -6,6 +6,10 @@ Ship faster without blocking development. CADET runs repeatable jobs in isolated
 
 Start with CADET Lite for core background build queueing, then upgrade to Pro when you need full release automation.
 
+<p>
+	<a class="cadet-cta" href="https://www.covyne.com/store/p/-cadet-desktop-license" target="_blank" rel="noopener noreferrer">Buy CADET Pro</a>
+</p>
+
 ## Built For Game Developers
 
 CADET is designed for solo developers, indie teams, and studios that want a cleaner release pipeline for Unity projects:
@@ -20,8 +24,6 @@ CADET is designed for solo developers, indie teams, and studios that want a clea
 - CADET Lite: background Unity build queue and isolated per-job workspace sync
 - CADET Pro: everything in Lite plus Steam, Epic Games Store, and macOS notarization workflows
 - CADET Enterprise: everything in Pro plus enterprise licensing options for cloud CI/CD and advanced team rollout needs
-
-Purchase CADET Pro: [CADET Desktop License](https://www.covyne.com/store/p/-cadet-desktop-license)
 
 ## Feature Comparison
 

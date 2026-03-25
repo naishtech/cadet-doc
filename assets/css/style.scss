@@ -7,3 +7,27 @@
 #header {
   display: none !important;
 }
+
+.cadet-cta {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #4caf50;
+  background: linear-gradient(180deg, #4caf50 0%, #2e7d32 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  box-shadow: 0 6px 18px rgba(76, 175, 80, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.cadet-cta:hover,
+.cadet-cta:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(76, 175, 80, 0.35);
+  filter: brightness(1.05);
+  text-decoration: none;
+}
