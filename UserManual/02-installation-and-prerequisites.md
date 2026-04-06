@@ -1,17 +1,34 @@
 # Installation and Prerequisites
 
+## Upgrading from CADET Lite to CADET Pro <span style="color: #D4AF37;">[Pro]</span>
+
+If you have CADET Lite installed in a Unity project and want to install CADET Pro, you **must** remove the existing Lite installation first.
+
+**Before importing the CADET Pro package:**
+
+1. **Back up your project** — commit to source control or copy the project folder before making any changes.
+2. Close the Unity project.
+3. In your project's `Assets` folder, delete the entire `Covyne/Cadet` folder.
+4. Reopen the project and confirm there are no leftover CADET scripts or errors.
+5. Import the CADET Pro `.unitypackage`.
+
+> Importing CADET Pro over an existing CADET Lite installation will cause script conflicts and may leave orphaned assets in your project. Always delete `Assets/Covyne/Cadet` first.
+
+---
+
 ## Unity Requirements
 
 - **Unity 2022.3 LTS or later** : CADET is designed for modern, long-term support (LTS) versions. Earlier versions are not supported.
 - **A valid Unity project that opens cleanly** : Your project should load without errors in the Unity Editor. If you have compilation errors or missing dependencies in your main project, CADET will inherit those issues when it syncs your workspace.
 
-## Workspace Requirement
+## Workspaces
 
-CADET requires a two-workspace model to keep your development work safe and isolated from build processes:
+CADET runs a two-workspace model to keep your development work safe and isolated from build processes:
 
-- **Use a dedicated build workspace copy of your project** : Create a separate folder on disk that will hold an automated copy of your project. This folder receives synced files before each build and should never be edited manually.
-- **Keep development and build workspaces separate** : Your active development project (where you edit code, scenes, and assets) and your build workspace must be in different locations. This prevents lock files, temporary artifacts, and build output from interfering with your creative work.
 - **CADET handles sync automatically** : CADET Lite and Pro both include built-in Directory Sync (copy-based) and Git Sync (branch-based) modes that keep your build workspace up-to-date before each job runs. You don’t need to manually copy files or manage versions.
+
+- **Keep development and build workspaces separate** : Your active development project (where you edit code, scenes, and assets) and your build workspace must be in different locations. This prevents lock files, temporary artifacts, and build output from interfering with your creative work.
+
 
 ## Platform Support
 

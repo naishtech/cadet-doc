@@ -22,6 +22,10 @@ Feature markers used in this guide:
 
 ## Before You Start
 
+> **Back up your project before installing or upgrading.** CADET modifies your Unity project by importing assets into `Assets/Covyne/Cadet`. Make sure you have a current backup or source control commit before proceeding.
+>
+> **Upgrading from CADET Lite to CADET Pro?** You **must** remove CADET Lite before installing Pro. Delete the `Assets/Covyne/Cadet` folder from your Unity project before importing the CADET Pro package. Importing Pro over an existing Lite installation will cause conflicts.
+
 1. Unity 2022.3 LTS or later is installed.
 2. Your project opens successfully in Unity.
 3. You have a dedicated build workspace copy of your Unity project.
